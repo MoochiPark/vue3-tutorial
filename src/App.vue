@@ -20,6 +20,10 @@
   <a href='#/components'>Components</a>
   <hr />
   <a href='#/congratulations'>Congratulations!</a>
+  <hr />
+  <a href='#/quiz1'>Quiz1</a>
+  <hr />
+  <a href='#/quiz2'>Quiz2</a>
   <hr class='separation-line' />
   <component :is='currentView' />
 </template>
@@ -36,6 +40,8 @@ import LifecycleAndTemplateRefs from "@/components/LifecycleAndTemplateRefs.vue"
 import Watchers from "@/components/Watchers.vue";
 import Components from "@/components/Components.vue";
 import Congratulations from "@/components/Congratulations.vue";
+import Quiz1Components from "@/components/Quiz1Components.vue";
+import Quiz2Components from "@/components/Quiz2Components.vue";
 
 import { ref, computed } from "vue";
 
@@ -50,6 +56,8 @@ const routes = {
   "/lifecycle": LifecycleAndTemplateRefs,
   "/watchers": Watchers,
   "/components": Components,
+  "/quiz1": Quiz1Components,
+  "/quiz2": Quiz2Components,
   "/congratulations": Congratulations,
 };
 
