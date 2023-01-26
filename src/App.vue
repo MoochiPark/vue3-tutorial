@@ -12,6 +12,14 @@
   <a href='#/list-rendering'>List Rendering</a>
   <hr />
   <a href='#/computed-property'>Computed Property</a>
+  <hr />
+  <a href='#/lifecycle'>Lifecycle and Template Refs</a>
+  <hr />
+  <a href='#/watchers'>Watchers</a>
+  <hr />
+  <a href='#/components'>Components</a>
+  <hr />
+  <a href='#/congratulations'>Congratulations!</a>
   <hr class='separation-line' />
   <component :is='currentView' />
 </template>
@@ -24,6 +32,10 @@ import ConditionalRendering from "@/components/ConditionalRendering.vue";
 import ListRendering from "@/components/ListRendering.vue";
 import DeclarativeRendering from "@/components/DeclarativeRendering.vue";
 import ComputedProperty from "@/components/ComputedProperty.vue";
+import LifecycleAndTemplateRefs from "@/components/LifecycleAndTemplateRefs.vue";
+import Watchers from "@/components/Watchers.vue";
+import Components from "@/components/Components.vue";
+import Congratulations from "@/components/Congratulations.vue";
 
 import { ref, computed } from "vue";
 
@@ -35,6 +47,10 @@ const routes = {
   "/conditional-rendering": ConditionalRendering,
   "/list-rendering": ListRendering,
   "/computed-property": ComputedProperty,
+  "/lifecycle": LifecycleAndTemplateRefs,
+  "/watchers": Watchers,
+  "/components": Components,
+  "/congratulations": Congratulations,
 };
 
 const currentPath = ref(window.location.hash);
